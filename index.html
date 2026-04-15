@@ -27,13 +27,7 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Instant
-  * Template URL: https://bootstrapmade.com/newtemplate-bootstrap-website-template/
-  * Updated: Jul 07 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+
 </head>
 
 <body class="index-page">
@@ -42,8 +36,7 @@
     <div class="container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.webp" alt=""> -->
+        
         <h1 class="sitename"><img src="./assets/img/logo.png" alt=""></h1>
       </a>
 
@@ -95,7 +88,7 @@
 
             <div class="hero-image-showcase" data-aos="fade-up" data-aos-delay="500">
               <div class="image-wrapper">
-                <img src="./assets/img/nkar1.png" class="img-fluid" alt="Strategic Overview">
+                <img src="./assets/img/grigg.png" class="img-fluid" alt="Strategic Overview">
                 <div class="floating-card card-1" data-aos="fade-right" data-aos-delay="600">
                   <div class="card-content">
                     <div class="card-icon">
@@ -135,8 +128,33 @@
         <div class="row align-items-center justify-content-between g-lg-5">
           <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
             <div class="image-wrapper">
-              <img src="./assets/img/grig.png" class="img-fluid rounded" alt="About Us Image">
-            </div>
+  <!-- <video class="img-fluid rounded" autoplay muted loop playsinline>
+    <source src="./assets/img/video/IMG_0093.MP4" type="video/mp4">
+    Ձեր բրաուզերը չի աջակցում video tag-ին
+  </video> -->
+  <div class="image-wrapper">
+  <video 
+    class="img-fluid rounded" 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    controls
+    id="video">
+    
+    <source src="./assets/img/video/IMG_0093.MP4" type="video/mp4">
+  </video>
+</div>
+
+<script>
+  const video = document.getElementById("video");
+
+  // առաջին interaction-ից հետո ձայնը միանա
+  document.addEventListener("click", () => {
+    video.muted = false;
+  }, { once: true });
+</script>
+</div>
           </div>
 
           <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
